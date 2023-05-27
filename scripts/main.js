@@ -32,7 +32,7 @@ Events.on(EventType.ClientLoadEvent, () => {
                                 sevenDialog.hide();
                                 const eightDialog = new BaseDialog("Confirmation 7");
                                 eightDialog.cont.add("..sure?").row();
-                                eightDialog.cont.button("YES, I'm SURE", () => {
+                                eightDialog.cont.button("SHUT UP", () => {
                                     eightDialog.hide();
                                     const nineDialog = new BaseDialog("Confirmation 8");
                                     nineDialog.cont.add("real or fake?").row();
