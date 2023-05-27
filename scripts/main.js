@@ -5,7 +5,7 @@ Events.on(EventType.WorldLoadEvent, () => {
     
     const annoyingDialog = new BaseDialog("Information Button");
     annoyingDialog.cont.add("please grow a habit of clicking this button").row();
-    annoyingDialog.cont.image(Core.atlas.find("information-button-dialog-information")).pad(20).row(); // it wont find the image, need help
+    annoyingDialog.cont.image(Core.atlas.find("informationButtonDialog-information")).pad(20).row(); // it wont find the image, need help
     annoyingDialog.cont.button("OK", () => {
         annoyingDialog.hide();
         const twoDialog = new BaseDialog("Confirmation");
