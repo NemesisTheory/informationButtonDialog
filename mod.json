@@ -2,7 +2,7 @@
   "name": "informationButtonDialog",
   "displayName": "informationButtonDialog",
   "author": "NemesisTheory",
-  "description": "A Mindustry mod that adds a popup dialog that tells the player to check out the information button for blocks. \nOnly appears upon launching to Ground Zero. \n\nFor the funny.",
+  "description": "A Mindustry mod that adds a popup dialog that tells the player to check out the information button for blocks. \n\nOnly appears upon launching to Ground Zero. \n\nFor the funny.",
   "version": "1.0",
   "minGameVersion": "140",
   "hidden": "true"
