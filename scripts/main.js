@@ -1,7 +1,6 @@
 // good lord
 
-Events.on(PlayerJoinEvent, event => {
-    const player = event.player;
+Events.on(EventType.ClientLoadEvent, () => {
     if (Vars.state.rules.sector == SectorPresets.groundZero.sector && p.isLocal()) {
         const annoyingDialog = new BaseDialog("Information Button");
         annoyingDialog.cont.add("please grow a habit of clicking this button").row();
