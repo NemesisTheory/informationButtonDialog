@@ -1,7 +1,7 @@
 // good lord
 
-Events.on(ClientLoadEvent, () => {
-    Time.runTask(10, () => {
+Events.on(PlayerJoin, player => {
+    if (Vars.state.rules.sector == SectorPresets.groundZero.sector) {
         const annoyingDialog = new BaseDialog("Information Button");
         annoyingDialog.cont.add("please grow a habit of clicking this button").row();
         annoyingDialog.cont.image(Core.atlas.find("information")).pad(20).row();
@@ -37,5 +37,5 @@ Events.on(ClientLoadEvent, () => {
             twoDialog.show();
         }).size(100, 50);
         annoyingDialog.show();
-    });
+    }
 });
