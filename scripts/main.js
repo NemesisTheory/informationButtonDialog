@@ -36,7 +36,7 @@ Events.on(EventType.ClientLoadEvent, () => {
                                     eightDialog.hide();
                                     const nineDialog = new BaseDialog("Confirmation 8");
                                     nineDialog.cont.add("real or fake?").row();
-                                    nineDialog.cont.button("GO AWAY.", () => {
+                                    nineDialog.cont.button("GO AWAY", () => {
                                         nineDialog.hide();
                                         const tenDialog = new BaseDialog("Confirmation 9");
                                         tenDialog.cont.add("Ok, real final question: ARE YOU SURE?").row();
