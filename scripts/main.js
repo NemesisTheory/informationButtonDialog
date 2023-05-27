@@ -22,9 +22,39 @@ Events.on(EventType.ClientLoadEvent, () => {
                     fiveDialog.cont.add("Reaaaaaaaaally? Like, are you *sure sure sure*?.").row();
                     fiveDialog.cont.button("YES", () => {
                         fiveDialog.hide();
-                        const sixDialog = new BaseDialog("Final Confirmation");
-                        sixDialog.cont.add("OK.").row();
-                        sixDialog.cont.button("OK", () => sixDialog.hide()).size(100, 50);
+                        const sixDialog = new BaseDialog("Confirmation 5");
+                        sixDialog.cont.add("...are you sure?").row();
+                        sixDialog.cont.button("Yes, I'm sure", () => {
+                            sixDialog.hide();
+                            const sevenDialog = new BaseDialog("Confirmation 6");
+                            sevenDialog.cont.add("I want to get this across; are you *sure sure sure sure*?").row();
+                            sevenDialog.cont.button("..yes", () => {
+                                sevenDialog.hide();
+                                const eightDialog = new BaseDialog("Confirmation 7");
+                                eightDialog.cont.add("..sure?").row();
+                                eightDialog.cont.button("YES, I'M SURE. NOW GO AWAY.", () => {
+                                    eightDialog.hide();
+                                    const nineDialog = new BaseDialog("Confirmation 8");
+                                    nineDialog.cont.add("real or fake?").row();
+                                    nineDialog.cont.button("REAL. PLEASE GO AWAY.", () => {
+                                        nineDialog.hide();
+                                        const tenDialog = new BaseDialog("Confirmation 9");
+                                        tenDialog.cont.add("Ok, real final question: ARE YOU SURE?").row();
+                                        tenDialog.cont.button("...I'm sure", () => {
+                                            tenDialog.hide();
+                                            const elevenDialog = new BaseDialog("Final Confirmation");
+                                            elevenDialog.cont.add("OK.").row();
+                                            elevenDialog.cont.button("OK", () => elevenDialog.hide()).size(100, 50);
+                                            elevenDialog.show();
+                                        }).size(100, 50);
+                                        tenDialog.show();
+                                    }).size(100, 50);
+                                    nineDialog.show();
+                                }).size(100, 50);
+                                eightDialog.show();
+                            }).size(100, 50);
+                            sevenDialog.show();
+                        }).size(100, 50);
                         sixDialog.show();
                     }).size(100, 50);
                     fiveDialog.show();
