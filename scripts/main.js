@@ -1,6 +1,6 @@
 // good lord
 
-Events.on(EventType.ClientLoadEvent, () => {
+Events.on(EventType.ClientLoadEvent, () => { // placeholder so i can confirm the code works
     const annoyingDialog = new BaseDialog("Information Button");
     annoyingDialog.cont.add("please grow a habit of clicking this button").row();
     annoyingDialog.cont.image(Core.atlas.find("information")).pad(20).row(); // it wont find the image, need help
