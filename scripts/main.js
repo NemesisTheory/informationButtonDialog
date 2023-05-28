@@ -47,7 +47,7 @@ Events.on(EventType.WorldLoadEvent, () => {
                                             const elevenDialog = new BaseDialog("Final Confirmation");
                                             elevenDialog.cont.add("OK.").row();
                                             elevenDialog.cont.button("OK", () => elevenDialog.hide()).size(100, 50);
-                                            elevenDialog.show();
+                                            elevenDialog.show(); // I would add more but idk what to put in the dialogue since this is already unfunny
                                         }).size(100, 50);
                                         tenDialog.show();
                                     }).size(100, 50);
