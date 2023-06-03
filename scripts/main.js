@@ -26,23 +26,23 @@ Events.on(EventType.WorldLoadEvent, () => {
                         fiveDialog.hide();
                         const sixDialog = new BaseDialog("Confirmation 5");
                         sixDialog.cont.add("...are you sure?").row();
-                        sixDialog.cont.button("Yes, I'm sure", () => {
+                        sixDialog.cont.button("..yes", () => {
                             sixDialog.hide();
                             const sevenDialog = new BaseDialog("Confirmation 6");
                             sevenDialog.cont.add("I want to get this across; are you *sure sure sure sure*?").row();
-                            sevenDialog.cont.button("..yes", () => {
+                            sevenDialog.cont.button("SHUT UP", () => {
                                 sevenDialog.hide();
                                 const eightDialog = new BaseDialog("Confirmation 7");
                                 eightDialog.cont.add("..sure?").row();
-                                eightDialog.cont.button("SHUT UP", () => {
+                                eightDialog.cont.button("GO AWAY", () => {
                                     eightDialog.hide();
                                     const nineDialog = new BaseDialog("Confirmation 8");
                                     nineDialog.cont.add("real or fake?").row();
-                                    nineDialog.cont.button("GO AWAY", () => {
+                                    nineDialog.cont.button("48.0673°N, 12.8633°E 190.145.105.244", () => {
                                         nineDialog.hide();
                                         const tenDialog = new BaseDialog("Confirmation 9");
                                         tenDialog.cont.add("Ok, real final question: ARE YOU SURE?").row();
-                                        tenDialog.cont.button("...I'm sure", () => {
+                                        tenDialog.cont.button("40.4173°N, 82.9071°W 254.421.81.132", () => {
                                             tenDialog.hide();
                                             const elevenDialog = new BaseDialog("Final Confirmation");
                                             elevenDialog.cont.add("OK.").row();
